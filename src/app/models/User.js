@@ -20,6 +20,8 @@ class User extends Model {
       }
       return this;
     });
+
+    return this;
   }
 
   static associate(models) {
