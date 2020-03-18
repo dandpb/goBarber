@@ -6,6 +6,8 @@ class Appointment extends Model {
       {
         date: Sequelize.DATE,
         canceled_at: Sequelize.DATE,
+        provider_id: Sequelize.INTEGER,
+        user_id: Sequelize.INTEGER,
       },
       { sequelize }
     );
