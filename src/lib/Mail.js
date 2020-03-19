@@ -15,6 +15,8 @@ class Mail {
       secure,
       auth: auth.user ? auth : null,
     });
+
+    this.configureTemplates();
   }
 
   configureTemplates() {
@@ -27,7 +29,7 @@ class Mail {
           layoutsDir: resolve(viewPath, 'layouts'),
           partialsDir: resolve(viewPath, 'partials'),
           defaultLayout: 'default',
-          extName: '.hbs',
+          extname: '.hbs',
         }),
         viewPath,
         extName: '.hbs',
